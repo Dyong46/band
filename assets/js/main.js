@@ -22,3 +22,28 @@ modal.addEventListener('click', hideBuyTicket);
 modalContainer.addEventListener('click', function (event) {
     event.stopPropagation();
 })
+
+var header = document.getElementById('header');
+var mobileMenu = document.getElementById('mobile-menu');
+var headerHeight = header.clientHeight;
+// Dong mo moblie menu
+mobileMenu.onclick = function() {
+    var isClose = header.clientHeight === headerHeight;
+    if(isClose) {
+        header.style.height = 'auto';
+    }
+    else {
+        header.style.height = null;
+    }
+}
+// Tu dong dong khi chon menu
+const menuItems = document.querySelectorAll('#nav li a[href*="#"');
+
+for(const menuItem of menuItems){
+    menuItem.addEventListener('click', function(event) {
+    console.log(this);
+        var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+        if(isParentMenu) event.preventDefault();
+        else header.style.height = null;
+    })
+}

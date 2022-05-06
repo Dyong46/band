@@ -1,0 +1,78 @@
+/* PC */
+@media (min-width: 1024px) {
+  #header .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+    #footer .socials-list {
+        font-size: 48px;
+    }
+    #footer .socials-list a{
+        margin: 0 8px;
+    }
+    #footer .start-now {
+        padding: 15px;
+        font-size: 25px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  #header .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  .s-full-width,
+  .s-col-full {
+    width: 100% !important;
+  }
+  #header {
+    overflow: hidden;
+  }
+  #nav {
+    display: block;
+  }
+  #nav > li {
+    display: block;
+  }
+  #nav > li:first-child {
+    display: inline-block;
+  }
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+  #nav .subnav a {
+    color: #fff;
+    padding: 5px 42px;
+  }
+  #header > .search {
+    display: none;
+  }
+  #nav li:active .subnav {
+    display: block;
+  }
+  #nav > li:active > a,
+  #nav .subnav li:active a {
+    background-color: #ccc;
+    color: #000;
+  }
+  .s-mt-16 {
+    margin-top: 16px !important;
+  }
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+}

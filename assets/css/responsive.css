@@ -13,6 +13,10 @@
     .contact-form .form-control {
         padding: 15px;
     }
+    .contact-form{
+        margin-top: 32px;
+        
+    }
     #footer .socials-list {
         font-size: 48px;
     }
@@ -74,5 +78,8 @@
   }
   .s-mt-8 {
     margin-top: 8px !important;
+  }
+  #slider .text-content{
+    display: none;
   }
 }
